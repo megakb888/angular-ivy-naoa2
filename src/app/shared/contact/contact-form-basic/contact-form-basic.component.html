@@ -1,0 +1,39 @@
+<h4>Skicka meddelande till vår kundtjänst</h4>
+<br />
+<form [formGroup]="contactFormBasic" (ngSubmit)="sendMessage()">
+  <div class="form-group row">
+    <label for="formName" class="col-sm-2 col-form-label">Namn</label>
+    <div class="col-sm-10">
+      <input type="text" formControlName="name" class="form-control" id="formName" placeholder="Namn"/>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="formCiv" class="col-sm-2 col-form-label">Kund- eller personnummer</label>
+    <div class="col-sm-10">
+      <input type="number" formControlName="civ" class="form-control" id="formCiv" placeholder="Kund- eller personnummer"/>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="formMail" class="col-sm-2 col-form-label">E-post</label>
+    <div class="col-sm-10">
+      <input type="email" formControlName="mail" class="form-control" id="formMail" placeholder="E-post" />
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="formTel" class="col-sm-2 col-form-label">Telefonnummer</label>
+    <div class="col-sm-10">
+      <input type="tel" formControlName="tel" class="form-control" id="formTel" placeholder="Telefonnummer" />
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="formMessage" class="col-sm-2 col-form-label">Meddelande</label>
+    <div class="col-sm-10">
+      <textarea formControlName="message" class="form-control" id="formMessage" placeholder="Meddelande"></textarea>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <button type="submit" class="btn btn-primary" [disabled]="!contactFormBasic.valid">Skicka</button>
+    </div>
+  </div>
+</form>

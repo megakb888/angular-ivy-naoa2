@@ -1,0 +1,11 @@
+{
+  "/www": {
+    "target": "http://192.168.137.19:89",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/www": ""
+    }
+  }
+}

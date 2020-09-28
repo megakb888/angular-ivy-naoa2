@@ -1,0 +1,48 @@
+<h4>Steg 2: Telefoni</h4>
+<br />
+<h5 class="margin-bot">Vanliga frågor</h5>
+<ngb-accordion [closeOthers]="true">
+  <ngb-panel id="accordion-tele-1">
+    <ng-template ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-tele-1')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-tele-1', 'fa-plus': opened != 'accordion-tele-1'}"></i> Vad behöver jag som befintlig kund göra för att beställa telefoni?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Befintliga kunder kan logga in på <a href="https://minasidor.netatonce.net">Mina Sidor</a> för att beställa. Inloggningsuppgifterna hittar ni på er faktura eller på det kundbrev ni fick när ni kopplades upp.</p>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="accordion-tele-2">
+    <ng-template class="finger" ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-tele-2')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-tele-2', 'fa-plus': opened != 'accordion-tele-2'}"></i> Vilken utrustning behöver jag?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <h6>Telefonidosa</h6>
+      <p>För att använda telefonin behöver ni en telefonidosa. Ni kan välja att antingen hyra eller köpa dosan. En ren telefonidosa kostar 29 kr/mån i hyra eller 549 kr om ni vill köpa den.</p>
+      <h6>Telefonidosa med inbyggd router</h6>
+      <p>Vi har även en telefonidosa med inbyggd trådlös router som ni kan hyra för 49 kr/mån eller köpa för 1295 kr.</p>
+      <h6>Frakt</h6>
+      <p>Fraktavgift tillkommer alltid vid utskick av utrustning.</p>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="accordion-tele-3">
+    <ng-template class="finger" ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-tele-3')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-tele-3', 'fa-plus': opened != 'accordion-tele-3'}"></i> Hur kommer jag igång?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Om du har telefoni hos oss behöver du en mediabox. Har du inte en sådan behöver du kontakta supporten på telefon 0771 - 40 44 00 eller maila till kundtjanst@netatonce.se så hjälper vi dig.</p>
+      <h6>Enskild telefon</h6>
+      <p>När du har en mediabox och endast ska ansluta en telefon kopplar du in den med en RJ11 kabel i det gröna uttaget som heter TEL 1.</p>
+      <h6>Flera telefoner</h6>
+      <p>Har du fler än en telefon behöver du en mellanpropp (denna köps separat) som du kopplar in i förstajacket.</p>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="accordion-tele-4">
+    <ng-template class="finger" ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-tele-4')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-tele-4', 'fa-plus': opened != 'accordion-tele-4'}"></i> Kan jag få telefonsignalen i fler än ett telefonjack?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Ja, det är möjligt. För att sprida telefonsignalen till alla jack i er bostad så behöver ni köpa till en mellanpropp för 50kr. Ni kopplar sedan mellanproppen från telefonidosan till ert förstajack.</p>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+<br/>
+<nao-support-contact-widget></nao-support-contact-widget>

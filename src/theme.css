@@ -1,0 +1,122 @@
+/* ############################################################ */
+/* Fina färger på allt */
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(51,122,183);
+  }
+  
+  table > th, tr, td {
+    vertical-align: middle !important;
+  }
+  
+  a.card
+  {
+    text-decoration: none !important;
+  }
+  
+  i.naoblue {
+    color: rgb(51,122,183);
+  }
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  table.center-vert tr td {
+    vertical-align: middle !important;
+  }
+  div.center-vert {
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+  }
+  
+  /* ############################################################ */
+  /* Animation */
+  
+  .fast-transition {
+    position: relative; /* For positioning the pseudo-element */
+  }
+  
+  .fast-transition::before {
+    /* Position the pseudo-element. */
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    /* Create the box shadow at expanded size. */
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  
+    /* Hidden by default. */
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  
+  .fast-transition:hover::before {
+    /* Show the pseudo-element on hover. */
+    opacity: 1;
+  }
+  
+  .btn-primary {
+      color: #fff;
+      background-color: rgb(4, 124, 192);
+      border-color: rgb(4, 124, 192);
+  }
+  .btn-primary:hover {
+      color: #fff;
+      background-color: rgb(23, 93, 141);
+      border-color: rgb(23, 93, 141);
+  }
+  .jumbotron-white {
+      background-color: #ffffff;
+  }
+  .text-red {
+      color: red;
+  }
+  
+  /* Accordion */
+  
+  ::ng-deep .accordion > .card .card-header {
+    background-color: rgb(0, 62, 93) !important;
+  }
+  
+  ::ng-deep .accordion > .card .card-header:hover .card-header:active {
+    background-color: rgb(43, 113, 169) !important;
+  }
+  
+  ::ng-deep .accordion > .card-title {
+    color: white !important;
+  }
+  
+  ::ng-deep .accordion-title {
+    color: white !important;
+  }
+  
+  ::ng-deep .btn-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  ::ng-deep .btn-link:hover {
+    color: white;
+    text-decoration: revert;
+  }
+  
+  ::ng-deep .btn-link:active {
+    color: white;
+    text-decoration: revert;
+  }
+  
+  ::ng-deep .btn-link:focus {
+    color: white;
+    text-decoration: revert;
+    text-decoration-color: white;
+  }
+  
+  ::ng-deep .panel-active {
+    background-color: rgb(0, 62, 93) !important;
+  }

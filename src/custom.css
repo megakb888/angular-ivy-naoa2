@@ -1,0 +1,103 @@
+/* ############################################################ */
+/* Sticky Footer */
+body, .sticky-footer-wrapper {
+  min-height:100vh;
+}
+
+.flex-fill {
+  flex:1 1 auto;
+}
+
+/* ############################################################ */
+/* Annat */
+
+code {
+  font-size: 80%;
+}
+
+.finger {
+  cursor: pointer;
+}
+.backwhite {
+    background-color: #f1f1f1;
+}
+
+/* ############################################################ */
+  /* Home Intro */
+  .home-intro {
+    background-color: #212529;
+    margin-bottom: 60px;
+    overflow: hidden;
+    padding: 38.4px 0;
+    padding: 2.4rem 0;
+    position: relative;
+    text-align: left;
+  }
+  
+  .home-intro p {
+    color: #FFF;
+    display: inline-block;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  .home-intro p span:not(.highlighted-word) {
+    color: #FFF;
+    display: block;
+    font-size: 0.8em;
+    font-weight: 300;
+    padding-top: 5px;
+    opacity: 0.7;
+  }
+  
+  .home-intro p .highlighted-word {
+    font-size: 1.6em;
+  }
+  
+  .home-intro .get-started {
+    position: relative;
+  }
+  
+  .home-intro .get-started .btn {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .home-intro .get-started .btn i {
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-left: 5px;
+  }
+  
+  .home-intro .get-started a {
+    color: #FFF;
+  }
+  
+  .home-intro .get-started a:not(.btn) {
+    color: #FFF;
+    font-weight: 600;
+  }
+  
+  .home-intro .learn-more {
+    color: #FFF;
+    margin-left: 15px;
+    font-weight: 300;
+  }
+  
+  .home-intro.light {
+    background-color: #EDEDED;
+  }
+  
+  .home-intro.light.secondary {
+    background-color: #E0E1E4;
+  }
+  
+  .home-intro.light p,
+  .home-intro.light .learn-more,
+  .home-intro.light p span:not(.highlighted-word),
+  .home-intro.light .get-started a:not(.btn) {
+    color: #333333;
+  }
+  
+  

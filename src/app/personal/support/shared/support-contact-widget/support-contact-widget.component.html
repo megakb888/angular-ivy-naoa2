@@ -1,0 +1,35 @@
+<h6 class="finger" (click)="open = !open"><i class="fas" [ngClass]="{'fa-plus': !open, 'fa-minus': open}"></i> Behöver du ytterligare hjälp?</h6>
+<div class="card" *ngIf="open">
+  <div class="card-body">
+    <p class="card-text">Vi har ett frågeformulär du kan fylla i om du inte kan hitta lösningen på ditt ärende här.</p>
+    <a class="btn btn-primary" routerLink="/support/ovrigt">
+      Till frågeformuläret <i class="fas fa-arrow-right text-white"></i>
+    </a>
+    <hr />
+    <p class="card-text">Alternativt kan du ringa till vår kundtjänst, telefon 0771 - 40 44 00.</p>
+    <button type="button" role="button" class="btn btn-outline-dark btn-sm" (click)="openCalltimes = !openCalltimes">Visa/Dölj öppettider</button>
+    <div *ngIf="openCalltimes">
+      <hr />
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title">Kundtjänst</h6>
+            <p class="card-text">Öppet helgfria vardagar: 10:00-20:00</p>
+            <p class="card-text">Öppet övriga dagar: 12:00-16:30</p>
+            <p class="card-text">0771-40 44 00</p>
+            <p class="card-text">kundtjanst@netatonce.se</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title">Försäljning</h6>
+            <p class="card-text">Öppet helgfria vardagar: 10:00-17:00</p>
+            <p class="card-text">Stängt för lunch: 12:00-13:00</p>
+            <p class="card-text">0771-40 44 00</p>
+            <p class="card-text">sales@netatonce.se</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

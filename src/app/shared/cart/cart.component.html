@@ -1,0 +1,45 @@
+<div *ngIf="cart">
+  <div *ngIf="cart.items && cart.items.length == 0">
+    <p>Du har inga varor i kundvagnen...</p>
+  </div>
+  <div *ngIf="cart.items && cart.items.length > 0">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Produkt</th>
+        <th>Antal</th>
+        <th>Summa</th>
+        <th *ngIf="!viewOnly"></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let product of cart.items">
+        <td>
+          <img class="img-fluid" src="../../../assets/img/products/201.png" alt="Produktbild" />
+          <span class="ml-4">{{product.product}}</span>
+        </td>
+        <td>
+          <div *ngIf="!viewOnly" class="input-group input-group-sm">
+            <select class="form-control" [(ngModel)]="product.amount" (change)="updateCart(product)">
+              <option *ngFor="let option of amounts" [value]="option">{{option}}</option>
+            </select>
+            <div class="input-group-append">
+              <span class="input-group-text">st</span>
+            </div>
+          </div>
+          <div *ngIf="viewOnly">
+            {{product.amount}}
+          </div>
+        </td>
+        <td>{{product.amount * product.price}}:-</td>
+        <td *ngIf="!viewOnly">
+          <button role="button" mat-button (click)="removeProduct(product)">
+            <i class="material-icons">delete_forever</i>
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

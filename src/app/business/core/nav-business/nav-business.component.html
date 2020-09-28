@@ -1,0 +1,43 @@
+<!-- Fixed navbar -->
+<div class="nav-scroller top-gateway">
+  <div class="container">
+  <nav class="nav nav-underline">
+    <a class="nav-link" href="/home">Privat</a>
+    <a class="nav-link active" href="/foretag/home">Företag</a>
+    <a class="nav-link" href="/fastighet/home">BRF/Fastighetsägare</a>
+    <a class="nav-link" href="http://ko.netatonce.se" target="_blank">Öppet Nät</a>
+  </nav>
+  </div>
+</div>
+<nav class="navbar navbar-expand-md navbar-light bg-dark navbar-white">
+  <div class="container">
+    <a href="/foretag/home" class="navbar-brand finger"><img class src="assets/img/logo/nao-logo-business.svg"
+        height="31px" id="logo2" alt="logo2" /></a>
+
+    <button class="navbar-toggler hidden-sm-up" type="button" (click)="sidenav.toggle()"
+      data-target="#navbarsDefault1" aria-controls="navbarsDefault1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link finger" href="/foretag/internet">Internet</a>
+          </li>
+        <li class="nav-item dropdown" ngbDropdown>
+          <a class="nav-link dropdown-toggle finger" id="dropdown02" aria-haspopup="true" ngbDropdownToggle>IT-tjänster</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
+            <a class="dropdown-item finger" href="/foretag/wifi">Wi-Fi Nät</a>
+            <a class="dropdown-item finger" href="/foretag/server">Server</a>
+            <a class="dropdown-item finger" href="/foretag/iot">IoT</a>
+          </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link finger" href="/foretag/telebusiness">Telefonväxel</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link finger" href="/foretag/kontakt">Kontakta oss</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

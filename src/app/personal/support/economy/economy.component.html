@@ -1,0 +1,106 @@
+<h4>Steg 2: Faktura</h4>
+<br />
+
+<h5 class="margin-bot">Vanliga frågor</h5>
+<ngb-accordion [closeOthers]="true">
+  <ngb-panel id="accordion-economy-1">
+    <ng-template ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-economy-1')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-economy-1', 'fa-plus': opened != 'accordion-economy-1'}"></i> Hur ser jag om min faktura är betald?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>På <a href="https://minasidor.netatonce.net">Mina Sidor</a> har du full översyn på dina fakturor. Där kan du se om din faktura är betald och beställa e-postfaktura.</p>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="accordion-economy-2">
+    <ng-template class="finger" ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-economy-2')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-economy-2', 'fa-plus': opened != 'accordion-economy-2'}"></i> Jag vill inte ha pappersfaktura, vilka alternativ finns?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Du kan beställa e-postfaktura för att slippa den administrativa avgiften. Fakturan kommer då direkt till din e-post.</p>
+      <h6>Autogiro</h6>
+      <p>För att beställa autogiro så kan du registrera dig via din bank eller så laddar du ner denna <a href="">blankett</a> och skickar in den till oss. Dock så kvarstår den administrativa avgiften på autogiro.</p>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="accordion-economy-3">
+    <ng-template class="finger" ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-economy-3')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-economy-3', 'fa-plus': opened != 'accordion-economy-3'}"></i> När får jag min första faktura?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Vi fakturerar alltid den första dagen varje månad. Har din tjänst aktiverats efter detta så dröjer det innan första fakturan kommer.</p>
+      <h6>Kontrollera fakturaperioden</h6>
+      <p>När du får din första faktura ber vi dig att kontrollera fakturaperioden, då den kommer att täcka mer än en månad. Detta kommer enbart gälla första fakturan.</p>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="accordion-economy-4">
+    <ng-template class="finger" ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-economy-4')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-economy-4', 'fa-plus': opened != 'accordion-economy-4'}"></i> Varför har jag fått en påminnelseavgift på fakturan?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Om din fakturabetalning inte varit oss tillhanda senast förfallodatumet skickar vi en påminnelse.</p>
+      <p>På <a href="https://minasidor.netatonce.net">Mina Sidor</a> kan du se fakturastatus på dina fakturor.</p>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="accordion-economy-5">
+    <ng-template class="finger" ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-economy-5')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-economy-5', 'fa-plus': opened != 'accordion-economy-5'}"></i> Hur ändrar jag mina adress- och kontaktuppgifter?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Logga in på <a href="https://minasidor.netatonce.net">Mina Sidor</a>. Där kan du ändra bland annat adress och fakturaadress.</p>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="accordion-economy-6">
+    <ng-template class="finger" ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-economy-6')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-economy-6', 'fa-plus': opened != 'accordion-economy-6'}"></i> Hur ofta kommer fakturan?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <h6>Fasta avgifter</h6>
+      <p>Fasta avgifter faktureras varje månad i förskott. Exempel: den 1 juni skickar vi faktura som gäller juli månad.</p>
+      <h6>Rörliga avgifter</h6>
+      <p>Rörliga avgifter, t.ex. samtalsavgifter, faktureras i efterskott.</p>
+      <p>Vissa samtal, främst betalsamtal, prissätts inte av oss, vilket betyder att du kan få faktura för enstaka betalsamtal ett par månader efter du ringt det. Om beloppet som ska faktureras understiger 100 kronor väntar vi tills samtalsavgifterna överstiger 100 kr.</p>
+      <hr />
+      <h6>Allmänna uppgifter</h6>
+      <p>Bankgiro: 5078-2168</p>
+      <p>IBAN: SE9880000816959343757648</p>
+      <p>SWIFT/BIC: SWEDSESS</p>
+      <p>Momskod: SE556506349101</p>
+      <p>Organisationsnummer: 556506-3491</p>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="accordion-economy-7">
+    <ng-template class="finger" ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-economy-7')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-economy-7', 'fa-plus': opened != 'accordion-economy-7'}"></i> Vad är den adminstrativa avgiften?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Det beror på hur du tar emot fakturan. Här ser du dina alternativ:</p>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Alternativ</th>
+            <th>Kostnad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>E-postfaktura</td>
+            <td>0 kr</td>
+          </tr>
+          <tr>
+            <td>E-postfaktura + Autogiro</td>
+            <td>39 kr</td>
+          </tr>
+          <tr>
+            <td>Pappersfaktura</td>
+            <td>39 kr</td>
+          </tr>
+          <tr>
+            <td>Pappersfaktura + Autogiro</td>
+            <td>39 kr</td>
+          </tr>
+        </tbody>
+      </table>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+<br />
+<nao-support-contact-widget></nao-support-contact-widget>

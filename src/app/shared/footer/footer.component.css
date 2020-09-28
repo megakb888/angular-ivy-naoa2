@@ -1,0 +1,87 @@
+/* ############################################################ */
+/* Footer */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+i {
+  color: white;
+}
+
+.footer {
+  background-color: rgb(39, 73, 114);
+}
+
+.footer-navigation-container {
+  background-color: rgb(39, 73, 114);
+}
+
+.footer-info-container {
+  background-color: rgb(39, 73, 114);
+}
+
+.footer p {
+  color: rgba(255, 255, 255, .8);
+}
+
+.font-white {
+  color: #fbfbfb;
+}
+
+.footer .copyright a {
+  color: rgba(255, 255, 255, .9);
+}
+
+.footer .footer-link,
+.footer .list-unstyled li a,
+.footer .nav .nav-item .nav-link {
+  color: #fbfbfb;
+}
+
+.footer .footer-link:hover,
+.footer .list-unstyled li a:hover,
+.footer .nav .nav-item .nav-link:hover {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.footer>.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.footer-heading {
+  padding-bottom: 9px;
+  margin: 10px 0 10px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.copyright {
+  color: #e9ecef;
+}
+
+.footer-integrity a {
+  color: white;
+}
+
+.footer-klarna {
+  padding-top: 0.5rem;
+  text-align: center;
+  padding-left: 0;
+  padding-bottom: 1rem;
+}
+
+.footer-klarna a {
+  color: white;
+
+}
+
+.footer-klarna-img {
+  width: 360px;
+}

@@ -1,0 +1,18 @@
+.bg-nao {
+    background-color: #337ab7;
+}
+
+.box-shadow { 
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); 
+}
+
+.icon-os-color {
+    color: #a2a2a2;
+}
+
+.col-green-hover, .col-green-hover:hover, .col-green-hover a:hover {
+    color: #21ecb9;
+    list-style: none;
+    font-size: 9rem;
+    text-align: center;
+}

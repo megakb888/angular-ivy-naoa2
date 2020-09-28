@@ -1,0 +1,123 @@
+.bg-image-full {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+  div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  .section-light {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .container #logo2:after {
+    content: '';
+    display: inline-block;
+    height: 38px;
+    width: 1px;
+    position: absolute;
+    left: 255px;
+    top: 0;
+    background: radial-gradient(circle,#999 0,transparent 100%);
+  }
+
+  
+  .navbar-brand {
+    border-right: 1px solid rgb(136, 136, 136);
+    padding: 0 20px 0 0;
+    display: inline-block;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+
+  .top-gateway {
+    background-color:#222 ;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.3em;
+    vertical-align: 0.1em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }
+  
+  @media (max-width: 991.98px) {
+    .offcanvas-collapse {
+      position: fixed;
+      top: 56px; /* Height of navbar */
+      bottom: 0;
+      left: 100%;
+      width: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: #343a40;
+      transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+      transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+      transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    }
+    .offcanvas-collapse.open {
+      visibility: visible;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+  
+  .nav-scroller {
+    position: relative;
+    z-index: 6;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+  
+  .nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .nav-underline .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+    color: #6c757d;
+  }
+  
+  .nav-underline .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .nav-underline .active {
+    font-weight: 500;
+    color: #78a9ff;
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.25rem;
+}

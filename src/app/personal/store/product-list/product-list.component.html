@@ -1,0 +1,166 @@
+<div class="container">
+  <div class="row mt-2">
+    <div class="col-lg-3" *ngFor="let product of productList">
+      <a [href]="'/butik/' + product.product_id" class="card rounded fast-transition">
+        <div class="card-img-container">
+          <img class="card-img-top" [src]="'../../../assets/img/products/200.png'" alt="produktbild" />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{product.product}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{product.category_name}}</h6>
+          <h5 class="card-price mb-2 text-red">{{product.price}} :-</h5>
+        </div>
+      </a>
+      <br />
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+      <div class="row">
+  
+        <div class="col-lg-3">
+  
+          <h3 class="my-4">Naos bästa butik</h3>
+          <div class="list-group">
+            <a href="#" class="list-group-item">Nätverk</a>
+            <a href="#" class="list-group-item">Telefoni</a>
+            <a href="#" class="list-group-item">Tillbehör</a>
+          </div>
+  
+        </div>
+        <!-- /.col-lg-3 -->
+  
+        <div class="col-lg-9">
+  
+            <ngb-carousel>
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img src="https://raw.githubusercontent.com/megakb888/img/master/assets/img/products/product_banner_1.webp" alt="first slide"/>
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img src="https://raw.githubusercontent.com/megakb888/img/master/assets/img/products/product_banner_2.webp" alt="second slide">
+                  </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                    <img src="https://raw.githubusercontent.com/megakb888/img/master/assets/img/products/product_banner_3.webp" alt="third slide">
+                  </div>
+                </ng-template>
+              </ngb-carousel>
+  <br />
+          <div class="row">
+  
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="https://raw.githubusercontent.com/megakb888/img/master/assets/img/products/uap-ac-hd_e40be48d-92b0-43f6-9066-4be5c7e83986_grande.webp" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Produkt 1</a>
+                  </h4>
+                  <h5>2499 kr</h5>
+                  <p class="card-text">Info om specifik router eller annan produkt. Info om specifik router eller annan produkt. Info om specifik router eller annan produkt.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="https://raw.githubusercontent.com/megakb888/img/master/assets/img/products/uap-ac-pro-01_grande.webp" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Produkt 2</a>
+                  </h4>
+                  <h5>2499 kr</h5>
+                  <p class="card-text">Info om specifik router eller annan produkt. Info om specifik router eller annan produkt. Info om specifik router eller annan produkt.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="https://raw.githubusercontent.com/megakb888/img/master/assets/img/products/us-8-150w-1_grande.webp" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Produkt 3</a>
+                  </h4>
+                  <h5>2499 kr</h5>
+                  <p class="card-text">Info om specifik router eller annan produkt. Info om specifik router eller annan produkt. Info om specifik router eller annan produkt.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="https://raw.githubusercontent.com/megakb888/img/master/assets/img/products/USW-Pro-24-PoE_Front_Angle_grande.webp" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Produkt 4</a>
+                  </h4>
+                  <h5>2499 kr</h5>
+                  <p class="card-text">Info om specifik router eller annan produkt. Info om specifik router eller annan produkt. Info om specifik router eller annan produkt.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="https://raw.githubusercontent.com/megakb888/img/master/assets/img/products/uap-ac-hd_e40be48d-92b0-43f6-9066-4be5c7e83986_grande.webp" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Produkt 5</a>
+                  </h4>
+                  <h5>2499 kr</h5>
+                  <p class="card-text">Info om specifik router eller annan produkt. Info om specifik router eller annan produkt. Info om specifik router eller annan produkt.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="https://raw.githubusercontent.com/megakb888/img/master/assets/img/products/uap-ac-pro-01_grande.webp" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Produkt 6</a>
+                  </h4>
+                  <h5>2499 kr</h5>
+                  <p class="card-text">Info om specifik router eller annan produkt. Info om specifik router eller annan produkt. Info om specifik router eller annan produkt.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!-- /.row -->
+  
+        </div>
+        <!-- /.col-lg-9 -->
+  
+      </div>
+      <!-- /.row -->
+  
+    </div>
+    <!-- /.container -->

@@ -1,0 +1,183 @@
+<div class="container">
+  <div class="card mt-2">
+    <div class="card-body">
+      <h3 class="card-title">Kassa</h3>
+      <mat-horizontal-stepper [linear]="true">
+        <mat-step [editable]="!orderDone">
+          <ng-template matStepLabel>Kundvagn</ng-template>
+            <nao-cart (cartSizeEvent)="cartAmountItems=$event"></nao-cart>
+            <div>
+              <button *ngIf="cartAmountItems > 0" type="button" role="button" color="accent" mat-raised-button matStepperNext>Nästa</button>
+              <button *ngIf="cartAmountItems < 1" type="button" role="button" color="accent" mat-raised-button (click)="goToShop()">
+                <i class="material-icons">keyboard_arrow_left</i> Webbutik
+              </button>
+            </div>
+        </mat-step>
+        <mat-step [stepControl]="customerInfo" [editable]="!orderDone">
+          <ng-template matStepLabel>Kunduppgifter</ng-template>
+          <form [formGroup]="customerInfo">
+            <div class="row">
+              <div class="col">
+                <mat-form-field>
+                  <input matInput placeholder="Kundnummer" formControlName="kundnr" />
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <mat-form-field>
+                  <input matInput placeholder="Förnamn" formControlName="name" required />
+                </mat-form-field>
+              </div>
+              <div class="col">
+                <mat-form-field>
+                  <input matInput placeholder="Efternamn" formControlName="efternamn" required />
+                </mat-form-field>
+              </div>
+              <div class="col">
+                <mat-form-field>
+                  <input matInput placeholder="Personnummer" formControlName="personnummer" required />
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <mat-form-field>
+                  <input matInput placeholder="Mobilnummer" formControlName="mobiltelefonnummer" required />
+                </mat-form-field>
+              </div>
+              <div class="col">
+                <mat-form-field>
+                  <input matInput placeholder="Telefonnummer" formControlName="telefonnummer" />
+                </mat-form-field>
+              </div>
+              <div class="col">
+                <mat-form-field>
+                  <input matInput placeholder="E-post" formControlName="epost" required />
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <mat-form-field>
+                  <input matInput placeholder="Adress" formControlName="adress" required />
+                </mat-form-field>
+              </div>
+              <div class="col">
+                <mat-form-field>
+                  <input matInput placeholder="Postnummer" formControlName="postnummer" required />
+                </mat-form-field>
+              </div>
+              <div class="col">
+                <mat-form-field>
+                  <input matInput placeholder="Ort" formControlName="ort" required />
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="alert alert-info">
+              <p><b>OBS!</b> Kontrollera att mobilnumret är korrekt ifyllt. SMS-aviseringen kommer skickas dit.</p>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="button" role="button" color="accent" mat-raised-button matStepperPrevious>Föregående</button>
+                <button type="button" role="button" class="ml-2" color="accent" mat-raised-button matStepperNext>Nästa</button>
+              </div>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="confirmForm" [editable]="!orderDone">
+          <ng-template matStepLabel>Sammanfattning & Bekräftelse</ng-template>
+          <div class="row mt-2 mb-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Kundvagn</h5>
+                  <nao-cart viewOnly="true"></nao-cart>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col">
+              <div class="card-deck">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Kunduppgifter</h5>
+                    <table class="table">
+                      <tbody>
+                      <tr>
+                        <td><b>Kundnummer</b></td>
+                        <td>{{customerInfo.value.kundnr}}</td>
+                      </tr>
+                      <tr>
+                        <td><b>Namn</b></td>
+                        <td>{{customerInfo.value.name}} {{customerInfo.value.efternamn}}</td>
+                      </tr>
+                      <tr>
+                        <td><b>Personnummer</b></td>
+                        <td>{{customerInfo.value.personnummer}}</td>
+                      </tr>
+                      <tr>
+                        <td><b>Mobilnummer</b></td>
+                        <td>{{customerInfo.value.mobiltelefonnummer}}</td>
+                      </tr>
+                      <tr>
+                        <td><b>Telefonnummer</b></td>
+                        <td>{{customerInfo.value.telefonnummer}}</td>
+                      </tr>
+                      <tr>
+                        <td><b>E-post</b></td>
+                        <td>{{customerInfo.value.epost}}</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Betalning och avisering</h5>
+                    <table class="table">
+                      <tbody>
+                      <tr>
+                        <td><b>Betalsätt</b></td>
+                        <td>Faktura</td>
+                      </tr>
+                      <tr>
+                        <td><b>Avi via SMS</b></td>
+                        <td>Ja</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col">
+              <form [formGroup]="confirmForm">
+                <div class="row">
+                  <div class="col">
+                    <mat-checkbox formControlName="confirmCheck">Härmed godkänner jag <a href="">Allmänna villkor</a></mat-checkbox>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="button" role="button" color="accent" mat-raised-button matStepperPrevious>Föregående</button>
+              <button type="button" role="button" color="primary" class="ml-2" mat-raised-button matStepperNext (click)="placeOrder(customerInfo.value)" [disabled]="!confirmForm.value.confirmCheck">Bekräfta och Beställ</button>
+            </div>
+          </div>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Beställning genomförd</ng-template>
+          <br />
+          <h3>Tack för din beställning!</h3>
+          <p>En beställningsbekräftelse har skickats till {{customerInfo.value.epost}}. Vi kommer nu gå igenom din order och antingen skicka en orderbekräftelse eller ge avslag. Om det blir avslag så skickar vi orsaken via e-post.</p>
+        </mat-step>
+      </mat-horizontal-stepper>
+    </div>
+  </div>
+</div>

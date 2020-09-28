@@ -1,0 +1,76 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$nao-dark-blue: (
+  50 : #e0e8ec,
+  100 : #b3c5ce,
+  200 : #809fae,
+  300 : #4d788e,
+  400 : #265b75,
+  500 : #003e5d,
+  600 : #003855,
+  700 : #00304b,
+  800 : #002841,
+  900 : #001b30,
+  A100 : #69adff,
+  A200 : #3691ff,
+  A400 : #0375ff,
+  A700 : #0069e8,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff
+  )
+);
+
+$nao-blue: (
+  50 : #e7eff6,
+  100 : #c2d7e9,
+  200 : #99bddb,
+  300 : #70a2cd,
+  400 : #528ec2,
+  500 : #337ab7,
+  600 : #2e72b0,
+  700 : #2767a7,
+  800 : #205d9f,
+  900 : #144a90,
+  A100 : #c4dcff,
+  A200 : #91bdff,
+  A400 : #5e9eff,
+  A700 : #458fff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000
+  )
+);
+
+$nao-primary: mat-palette($nao-blue);
+$nao-accent: mat-palette($nao-dark-blue);
+$nao-warn: mat-palette($mat-red);
+
+$nao-theme: mat-light-theme($nao-primary, $nao-accent, $nao-warn);
+
+@include angular-material-theme($nao-theme);

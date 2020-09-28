@@ -1,0 +1,55 @@
+<h4 class="margin-bot">Steg 2: Bredband</h4>
+
+<div class="card-deck">
+  <div class="card">
+    <div class="card-body">
+      <h5>Felsökning</h5>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5>Driftinformation</h5>
+      <p class="card-text">För att se vår driftinformation, följ länken nedan.</p>
+      <a href="/driftinfo" target="_blank">Driftinformation</a> (Länk öppnas i ny flik)
+    </div>
+  </div>
+</div>
+<hr />
+<h5 class="margin-bot">Vanliga frågor</h5>
+<ngb-accordion [closeOthers]="true">
+  <ngb-panel id="accordion-broadband-1">
+    <ng-template ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-broadband-1')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-broadband-1', 'fa-plus': opened != 'accordion-broadband-1'}"></i> Mitt WiFi fungerar dåligt</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Vi har en guide som förhoppningsvis kan lösa dina WiFi-problem.</p>
+      <a role="button" class="btn btn-primary" routerLink="/support/bredband/wifi">Till WiFi-guiden <i class="fas fa-arrow-right text-white"></i></a>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="accordion-broadband-2">
+    <ng-template class="finger" ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-broadband-2')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-broadband-2', 'fa-plus': opened != 'accordion-broadband-2'}"></i> Hur lång är min uppsägningstid?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Alla våra tjänster har en uppsägningstid på 1 kalendermånad. Detta innebär att när du säger upp abonnemanget så fortsätter det gälla tills sista dagen i nästkommande månad.</p>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="accordion-broadband-3">
+    <ng-template class="finger" ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-broadband-3')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-broadband-3', 'fa-plus': opened != 'accordion-broadband-3'}"></i> Kan jag köpa en egen router och använda med er tjänst?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Ja, det går utmärkt att köpa en egen router. Nackdelen blir att det kan bli svårare för oss att hjälpa er med felsökning på utrustning som inte är från oss.</p>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel id="accordion-broadband-4">
+    <ng-template class="finger" ngbPanelTitle>
+      <h6 class="accordion-title" (click)="togglePanel('accordion-broadband-4')"><i class="fas text-white" [ngClass]="{'fa-minus': opened == 'accordion-broadband-4', 'fa-plus': opened != 'accordion-broadband-4'}"></i> Erbjuder ni statisk IP eller IPv6?</h6>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <p>Vi erbjuder inte statisk IP till privatkunder. Det finns en möjlighet att vi kommer erbjuda IPv6 i framtiden, men inget är bestämt i nuläget.</p>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+<br />
+<nao-support-contact-widget></nao-support-contact-widget>

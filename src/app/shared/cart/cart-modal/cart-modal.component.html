@@ -1,0 +1,19 @@
+<ng-template #cartModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="cart-modal-title">Kundvagn</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <nao-cart></nao-cart>
+  </div>
+  <div class="modal-footer">
+    <a class="btn btn-outline-dark" href="/kassa" role="button" (click)="modal.close()">Till kassan <i class="fas fa-arrow-right"></i></a>
+  </div>
+</ng-template>
+
+<!-- Button trigger cart-modal -->
+<button type="button" mat-raised-button color="primary" [matBadge]="amountItems" matBadgeColor="accent" matBadgePosition="below after" class="my-2 my-sm-0" (click)="open(cartModal)">
+  <i class="fas fa-shopping-cart"></i> Kundvagn
+</button>

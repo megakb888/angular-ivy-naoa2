@@ -1,0 +1,187 @@
+.head {
+    height: 4.9375rem;
+  }
+  
+  .showcase .showcase-text {
+    padding: 3rem;
+  }
+  
+  .showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+  }
+  
+  @media (min-width: 768px) {
+    .showcase .showcase-text {
+      padding: 7rem;
+    }
+  }
+  
+  .features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  
+  .features-icons .features-icons-item {
+    max-width: 20rem;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+  }
+  
+  .features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem;
+  }
+  
+  .testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  
+  .testimonials .testimonial-item {
+    max-width: 18rem;
+  }
+  
+  .testimonials .testimonial-item img {
+    max-width: 12rem;
+    -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+  }
+  
+  .font-medium {
+    font-weight: 400;
+    font-style: normal !important;
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 7px;
+    text-decoration: none;
+  
+  }
+  
+  .row-pad-10 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  div.scrollmenu {
+    background-color: #fff;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  .horizontal-nav-icon {
+    display: inline-block;
+    list-style: none inside;
+    white-space: pre-line;
+    width: 120px;
+  }
+  
+  header.masthead {
+    position: relative;
+    overflow: hidden;
+    padding-top: calc(7rem + 72px);
+    padding-bottom: 7rem;
+    background-image: url("/assets/img/banner/home/sjo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  
+  header.masthead .masthead-content {
+    z-index: 1;
+    position: relative;
+  }
+  
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 4rem;
+    color: #fff;
+  }
+  
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  @media (min-width: 992px) {
+    header.masthead {
+      padding-top: calc(10rem + 55px);
+      padding-bottom: 10rem;
+    }
+  
+    header.masthead .masthead-content .masthead-heading {
+      font-size: 6rem;
+    }
+  
+    header.masthead .masthead-content .masthead-subheading {
+      font-size: 4rem;
+    }
+  }
+  
+  .bg-primary {
+    background-color: #ee0979 !important;
+  }
+  
+  .btn-primary {
+    background-color: #0043ce;
+    border-color: #0043ce;
+  }
+  
+  .btn-primary:active,
+  .btn-primary:focus,
+  .btn-primary:hover {
+    background-color: #0f62fe !important;
+    border-color: #0f62fe !important;
+  }
+  
+  .btn-primary:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(43, 9, 238, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(43, 9, 238, 0.5);
+  }
+  
+  .btn-secondary {
+    background-color: #ff6a00;
+    border-color: #ff6a00;
+  }
+  
+  .btn-secondary:active,
+  .btn-secondary:focus,
+  .btn-secondary:hover {
+    background-color: #cc5500 !important;
+    border-color: #cc5500 !important;
+  }
+  
+  .btn-secondary:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+  }
+   
+    .btn-xl {
+      text-transform: uppercase;
+      padding: 1.5rem 3rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.1rem;
+    }
+    
+    .bg-black {
+      background-color: #000 !important;
+    }
+    
+    .rounded-pill {
+      border-radius: 5rem;
+    }
+  

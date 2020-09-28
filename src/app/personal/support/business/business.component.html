@@ -1,0 +1,37 @@
+<h4>Steg 2: Företag</h4>
+
+<div class="card-deck">
+  <a routerLink="/support/foretag/avtal" class="card stretched-link fast-transition text-center col-lg-3">
+    <div class="card-body">
+      <i class="far fa-handshake fa-2x naoblue"></i>
+      <hr />
+      <h6 class="card-title">Avtal & beställning</h6>
+    </div>
+  </a>
+  <a routerLink="/support/foretag/leverans" class="card stretched-link fast-transition text-center col-lg-3">
+    <div class="card-body">
+      <i class="fas fa-truck fa-2x naoblue"></i>
+      <hr />
+      <h6 class="card-title">Leverans</h6>
+    </div>
+  </a>
+  <a routerLink="/support/foretag/faktura" class="card stretched-link fast-transition text-center col-lg-3">
+    <div class="card-body">
+      <i class="far fa-file-alt fa-2x naoblue"></i>
+      <hr />
+      <h6 class="card-title">Faktura</h6>
+    </div>
+  </a>
+  <a routerLink="/support/foretag/felanmalan" class="card stretched-link fast-transition text-center col-lg-3">
+    <div class="card-body">
+      <i class="fas fa-exclamation-circle fa-2x naoblue"></i>
+      <hr />
+      <h6 class="card-title">Felanmälan</h6>
+    </div>
+  </a>
+</div>
+<br />
+<router-outlet></router-outlet>
+
+<br />
+<nao-support-contact-widget></nao-support-contact-widget>

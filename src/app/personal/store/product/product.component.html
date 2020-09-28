@@ -1,0 +1,18 @@
+<div class="container" *ngIf="product">
+  <br />
+  <div class="row">
+    <div class="col-lg-8">
+      <h5>{{product.product}}</h5>
+      <hr />
+      <div class="align-items-center">
+        <img class="img-fluid mx-auto d-block" src="assets/img/products/200.png" alt="Produktbild"/>
+      </div>
+      <hr />
+      <nao-product-detail [product]="product"></nao-product-detail>
+    </div>
+    <div class="col-lg-4">
+      <nao-product-card [product]="product"></nao-product-card>
+    </div>
+  </div>
+</div>
+
