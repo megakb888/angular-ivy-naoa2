@@ -94,7 +94,7 @@
     overflow: hidden;
     padding-top: calc(7rem + 72px);
     padding-bottom: 7rem;
-    background-image: url("/assets/img/banner/home/sjo.jpg");
+    background-image: url("https://raw.githubusercontent.com/megakb888/img/master/assets/img/business/home/home/banner_business.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
