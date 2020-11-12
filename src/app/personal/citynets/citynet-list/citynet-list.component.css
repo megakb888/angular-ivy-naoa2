@@ -1,185 +1,192 @@
-  header.masthead {
-    position: relative;
-    background-color: #343a40;
-    background: url("../../../../assets/img/test/bg-masthead2.jpg") no-repeat center center;
-    background-size: cover;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-  
-  header.masthead .overlay {
-    position: absolute;
-    background-color: #212529;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-  }
-  
-  header.masthead h1 {
-    font-size: 2rem;
-    color: white;
-  }
-  
-  @media (min-width: 768px) {
-    header.masthead {
-      padding-top: 12rem;
-      padding-bottom: 12rem;
-    }
-    header.masthead h1 {
-      font-size: 3rem;
-    }
-  }
-  
-  .showcase .showcase-text {
-    padding: 3rem;
-  }
-  
-  .showcase .showcase-img {
-    min-height: 30rem;
-    background-size: cover;
-  }
-  
-  @media (min-width: 768px) {
-    .showcase .showcase-text {
-      padding: 7rem;
-    }
-  }
-  
-  .features-icons {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  .features-icons .features-icons-item {
-    max-width: 20rem;
-  }
-  
-  .features-icons .features-icons-item .features-icons-icon {
-    height: 7rem;
-  }
-  
-  .features-icons .features-icons-item .features-icons-icon i {
-    font-size: 4.5rem;
-  }
-  
-  .features-icons .features-icons-item:hover .features-icons-icon i {
-    font-size: 5rem;
-  }
-  
-  .testimonials {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
-  
-  .testimonials .testimonial-item {
-    max-width: 18rem;
-  }
-  
-  .testimonials .testimonial-item img {
-    max-width: 12rem;
-    -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
-    box-shadow: 0px 5px 5px 0px #adb5bd;
-  }
-  
-  .call-to-action {
-    position: relative;
-    background-color: #343a40;
-    background: url("../../../../assets/img/test/bg-masthead2.jpg") no-repeat center center;
-    background-size: cover;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
-  
-  .call-to-action .overlay {
-    position: absolute;
-    background-color: #212529;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-  }
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("https://raw.githubusercontent.com/megakb888/img/master/assets/img/personal/citynet/bg-masthead.webp")
+    no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 
-  /* ############################################################ */
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.features-icons {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("../../../../assets/img/test/bg-masthead2.jpg") no-repeat
+    center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+/* ############################################################ */
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-	color: #212529;
-	font-weight: 200;
-	letter-spacing: -.05em;
-	margin: 0;
-	-webkit-font-smoothing: antialiased;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212529;
+  font-weight: 200;
+  letter-spacing: -0.05em;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
-	font-size: 2.6em;
-	line-height: 44px;
-	margin: 0 0 32px 0;
+  font-size: 2.6em;
+  line-height: 44px;
+  margin: 0 0 32px 0;
 }
 
 h2 {
-	font-size: 2.2em;
-	font-weight: 300;
-	line-height: 42px;
+  font-size: 2.2em;
+  font-weight: 300;
+  line-height: 42px;
   margin: 0 0 32px 0;
 }
 
 h3 {
-	font-size: 1.8em;
-	font-weight: 400;
-	line-height: 24px;
-	margin-bottom: 33px;
-	text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 33px;
+  text-transform: uppercase;
 }
 
 h4 {
-	font-size: 1.4em;
-	font-weight: 600;
-	line-height: 27px;
-	margin: 0 0 14px 0;
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 27px;
+  margin: 0 0 14px 0;
 }
 
 h5 {
-	font-size: 1em;
-	font-weight: 600;
-	line-height: 18px;
-	margin: 0 0 14px 0;
-	text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 0 0 14px 0;
+  text-transform: uppercase;
 }
 
 h6 {
-	color: #333;
-	font-size: 1em;
-	font-weight: 400;
-	line-height: 18px;
-	margin: 0 0 14px 0;
+  color: #333;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0 0 14px 0;
 }
 
 h1.big {
-	font-size: 4.2em;
-	line-height: 54px;
+  font-size: 4.2em;
+  line-height: 54px;
 }
 
 h1.small {
-	font-size: 2.2em;
-	line-height: 42px;
-	font-weight: 600;
+  font-size: 2.2em;
+  line-height: 42px;
+  font-weight: 600;
 }
 
 h1.short {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 h2.short {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 h3.short,
 h4.short,
 h5.short,
 h6.short {
-	margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 h1.shorter,
@@ -188,7 +195,7 @@ h3.shorter,
 h4.shorter,
 h5.shorter,
 h6.shorter {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 h1.tall,
@@ -197,7 +204,7 @@ h3.tall,
 h4.tall,
 h5.tall,
 h6.tall {
-	margin-bottom: 33px;
+  margin-bottom: 33px;
 }
 
 h1.taller,
@@ -206,7 +213,7 @@ h3.taller,
 h4.taller,
 h5.taller,
 h6.taller {
-	margin-bottom: 44px;
+  margin-bottom: 44px;
 }
 
 h1.spaced,
@@ -215,7 +222,7 @@ h3.spaced,
 h4.spaced,
 h5.spaced,
 h6.spaced {
-	margin-top: 22px;
+  margin-top: 22px;
 }
 
 h1.more-spaced,
@@ -224,7 +231,7 @@ h3.more-spaced,
 h4.more-spaced,
 h5.more-spaced,
 h6.more-spaced {
-	margin-top: 44px;
+  margin-top: 44px;
 }
 
 h1.dark,
@@ -232,7 +239,7 @@ h2.dark,
 h3.dark,
 h4.dark,
 h5.dark {
-	color: #212529;
+  color: #212529;
 }
 
 h1.light,
@@ -241,7 +248,7 @@ h3.light,
 h4.light,
 h5.light,
 h6.light {
-	color: #FFF;
+  color: #fff;
 }
 
 h1.text-shadow,
@@ -250,5 +257,5 @@ h3.text-shadow,
 h4.text-shadow,
 h5.text-shadow,
 h6.text-shadow {
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }

@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule } from "@angular/common/http";
 
 import { BusinessModule } from "./business/business.module";
@@ -12,16 +12,13 @@ import { CoverageMapModule } from "./shared/coverage-map/coverage-map.module";
 import { GdprModule } from "./shared/gdpr/gdpr.module";
 import { JobsModule } from "./shared/jobs/jobs.module";
 import { ProjectSupportModule } from "./shared/project-support/project-support.module";
-import { RouterModule } from '@angular/router';
+import { RouterModule } from "@angular/router";
 import { RoutesModule } from "./routing/routes.module";
 
-import { AppComponent } from './app.component';
-
+import { AppComponent } from "./app.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -41,4 +38,4 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
