@@ -1,0 +1,41 @@
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background-image: url("https://raw.githubusercontent.com/megakb888/img/master/assets/img/business/home/home/banner_business_wifi.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
+  color: #fff;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+  }
+
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+  }
+}

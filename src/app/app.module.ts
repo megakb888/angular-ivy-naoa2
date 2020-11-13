@@ -16,6 +16,7 @@ import { RouterModule } from "@angular/router";
 import { RoutesModule } from "./routing/routes.module";
 
 import { AppComponent } from "./app.component";
+import { CarouselModule } from "ngx-owl-carousel-o";
 
 @NgModule({
   declarations: [AppComponent],
@@ -32,7 +33,8 @@ import { AppComponent } from "./app.component";
     JobsModule,
     ProjectSupportModule,
     RouterModule,
-    RoutesModule
+    RoutesModule,
+    CarouselModule
   ],
   exports: [],
   providers: [],

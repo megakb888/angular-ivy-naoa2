@@ -4,35 +4,59 @@
     <div class="row h-100 align-items-center">
       <div class="col-lg-12">
         <h1 class="display-4 text-white">{{citynet.title}}</h1>
-        <p class="lead text-white">När du beställer bredband i {{citynet.title}} får du det till kampanjpris i {{citynet.campaignperiod}} månader. Välj den tjänst som passar ditt surfmönster bäst, om du ska streama TV, spela dataspel, eller bara läsa nyheterna.</p>
+        <p class="lead text-white">
+          När du beställer bredband i {{citynet.title}} får du det till
+          kampanjpris i {{citynet.campaignperiod}} månader. Välj den tjänst som
+          passar ditt surfmönster bäst, om du ska streama TV, spela dataspel,
+          eller bara läsa nyheterna.
+        </p>
       </div>
     </div>
   </div>
 </header>
 
 <!-- Content section -->
-<section class="pricing py-5 bg-image-full" [ngStyle]="{ 'background-image': 'url(' + citynet.backimg + ')'}">
+<section
+  class="pricing py-5 bg-image-full"
+  [ngStyle]="{ 'background-image': 'url(' + citynet.backimg + ')'}"
+>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-4" *ngFor="let pris of citynet.prices">
-        <div class="card mb-5 mb-lg-0">
-          <div class="card-body">
-            <h2 class="text-center">{{ pris.speed }} Mbit/s</h2>
-            <h5 class="card-price text-center"><span class="period">{{ pris.sprice }} kr/mån</span></h5>
-            <hr>
-            <ul>
-              <li><strong>Kampanj:</strong> Halva priset i {{pris.campaigndate}} månader</li>
-              <li><strong>Kampanjpris:</strong> {{pris.cprice}} kr/mån</li>
-              <li><strong>Ord.pris:</strong> {{ pris.sprice }} kr/mån</li>
-              <li><strong>Bindningstid:</strong> {{ pris.contractperiod }} månader</li>
-            </ul>
-            <hr>
-            <a href="{{ citynet.orderURL }}" class="btn btn-block btn-primary text-uppercase">Beställ</a>
+    <owl-carousel-o>
+      <div class="row">
+        <ng-template carouselSlide *ngFor="let pris of citynet.prices">
+          <div class="col-lg-12">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h2 class="text-center">{{ pris.speed }} Mbit/s</h2>
+                <h5 class="card-price text-center">
+                  <span class="period">{{ pris.sprice }} kr/mån</span>
+                </h5>
+                <hr />
+                <ul>
+                  <li>
+                    <strong>Kampanj:</strong> Halva priset i
+                    {{pris.campaigndate}} månader
+                  </li>
+                  <li><strong>Kampanjpris:</strong> {{pris.cprice}} kr/mån</li>
+                  <li><strong>Ord.pris:</strong> {{ pris.sprice }} kr/mån</li>
+                  <li>
+                    <strong>Bindningstid:</strong> {{ pris.contractperiod }}
+                    månader
+                  </li>
+                </ul>
+                <hr />
+                <a
+                  href="{{ citynet.orderURL }}"
+                  class="btn btn-block btn-primary text-uppercase"
+                  >Beställ</a
+                >
+              </div>
+            </div>
+            <br />
           </div>
-        </div>
-        <br />
+        </ng-template>
       </div>
-    </div>
+    </owl-carousel-o>
   </div>
 </section>
 
@@ -48,29 +72,52 @@
     <div class="row">
       <div class="col-lg-6 mb-4">
         <div class="card h-100">
-          <a href="/sakerhetspaket"><img class="card-img-top" src="assets/img/services/eset.jpg" alt="eset"></a>
+          <a href="/sakerhetspaket"
+            ><img
+              class="card-img-top"
+              src="assets/img/services/eset.jpg"
+              alt="eset"
+          /></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="/sakerhetspaket">Eset Säkerhetspaket</a>
             </h4>
-            <p class="card-text">Känn dig helt trygg på nätet med senaste versionen av vår Internetsäkerhet. Anslut
-              säkert till sociala nätverk, surfa eller spela.</p>
+            <p class="card-text">
+              Känn dig helt trygg på nätet med senaste versionen av vår
+              Internetsäkerhet. Anslut säkert till sociala nätverk, surfa eller
+              spela.
+            </p>
             <p class="card-text">Pris från 39 kr/mån, utan bindningstid.</p>
-            <p class="card-text">Nu ingår 3 månader utan extra kostnad när du beställer en bredbandstjänst från oss.</p>
-
+            <p class="card-text">
+              Nu ingår 3 månader utan extra kostnad när du beställer en
+              bredbandstjänst från oss.
+            </p>
           </div>
         </div>
       </div>
       <div class="col-lg-6 mb-4">
         <div class="card h-100">
-          <a href="/telefoni"><img class="card-img-top" src="assets/img/services/telefoni.jpg" alt="eset"></a>
+          <a href="/telefoni"
+            ><img
+              class="card-img-top"
+              src="assets/img/services/telefoni.jpg"
+              alt="eset"
+          /></a>
           <div class="card-body">
             <h4 class="card-title">
               <a href="/telefoni">Telefoni</a>
             </h4>
-            <p class="card-text">En helhetslösning med hemtelefoni via bredbandet är en hemtelefon där man ringer via bredbandet med hjälp av en telefonbox. Man kopplar telefonboxen mellan den vanliga telefonen och bredbandsuttaget.            </p>
+            <p class="card-text">
+              En helhetslösning med hemtelefoni via bredbandet är en hemtelefon
+              där man ringer via bredbandet med hjälp av en telefonbox. Man
+              kopplar telefonboxen mellan den vanliga telefonen och
+              bredbandsuttaget.
+            </p>
             <p class="card-text">Pris från 49 kr/mån, utan bindningstid.</p>
-            <p class="card-text">Nu ingår 3 månader utan extra kostnad när du beställer en bredbandstjänst från oss.</p>
+            <p class="card-text">
+              Nu ingår 3 månader utan extra kostnad när du beställer en
+              bredbandstjänst från oss.
+            </p>
           </div>
         </div>
       </div>
@@ -90,11 +137,16 @@
     <div class="row mb-2">
       <div class="col-md-6">
         <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+        >
           <div class="col p-4 d-flex flex-column position-static">
             <h3 class="mb-0">WiFi router</h3>
             <div class="mb-1 text-muted">ASUS RT-AC87U</div>
-            <p class="card-text mb-auto">Info om specifik router eller annan produkt. Info om specifik router eller annan produkt. Info om specifik router eller annan produkt.</p>
+            <p class="card-text mb-auto">
+              Info om specifik router eller annan produkt. Info om specifik
+              router eller annan produkt. Info om specifik router eller annan
+              produkt.
+            </p>
             <a href="#" class="stretched-link">Läs mer</a>
           </div>
           <div class="col-auto d-none d-lg-block">
@@ -104,11 +156,16 @@
       </div>
       <div class="col-md-6">
         <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+        >
           <div class="col p-4 d-flex flex-column position-static">
             <h3 class="mb-0">WiFi förlängare</h3>
             <div class="mb-1 text-muted">ASUS RP-AC56</div>
-            <p class="mb-auto">Info om specifik router eller annan produkt. Info om specifik router eller annan produkt. Info om specifik router eller annan produkt.</p>
+            <p class="mb-auto">
+              Info om specifik router eller annan produkt. Info om specifik
+              router eller annan produkt. Info om specifik router eller annan
+              produkt.
+            </p>
             <a href="#" class="stretched-link">Läs mer</a>
           </div>
           <div class="col-auto d-none d-lg-block">
@@ -133,15 +190,26 @@
       <div class="col-lg-12 mb-4">
         <div class="card h-100">
           <div class="card-body">
-            <p class="card-text">Ingen bindningstid. 1 månads uppsägningstid. Priser gäller nybeställning och är
-              inkl. moms.</p>
+            <p class="card-text">
+              Ingen bindningstid. 1 månads uppsägningstid. Priser gäller
+              nybeställning och är inkl. moms.
+            </p>
             <p class="card-text">Ångerrätten är på 14 dagar.</p>
-            <p class="card-text">OBS! – uppsägningstiden (1 månad) påbörjas tidigast efter att eventuell kampanj
-              passerat.</p>
-            <p class="card-text">Kampanjerbjudanden gäller endast en gång per hushåll.</p>
-            <p class="card-text"><img src="../../../assets/img/icon/pdf.png" width="30px"><a target="_new"
-                href="https://www.netatonce.se/doc/pdf/allmanna-villkor-privat-1_37.pdf">Allmänna Villkor</a> gäller för
-              tjänsterna.</p>
+            <p class="card-text">
+              OBS! – uppsägningstiden (1 månad) påbörjas tidigast efter att
+              eventuell kampanj passerat.
+            </p>
+            <p class="card-text">
+              Kampanjerbjudanden gäller endast en gång per hushåll.
+            </p>
+            <p class="card-text">
+              <img src="../../../assets/img/icon/pdf.png" width="30px" /><a
+                target="_new"
+                href="https://www.netatonce.se/doc/pdf/allmanna-villkor-privat-1_37.pdf"
+                >Allmänna Villkor</a
+              >
+              gäller för tjänsterna.
+            </p>
           </div>
         </div>
       </div>

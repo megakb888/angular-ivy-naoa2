@@ -1,49 +1,77 @@
 <!-- Fixed navbar -->
 <div class="nav-scroller top-gateway">
-    <div class="container">
-      <nav class="nav nav-underline">
-        <a class="nav-link active" href="/home">Privat</a>
-        <a class="nav-link" href="/foretag/home">Företag</a>
-        <a class="nav-link" href="/fastighet/home">BRF/Fastighetsägare</a>
-        <a class="nav-link" href="http://ko.netatonce.se" target="_blank">Öppet Nät</a>
-      </nav>
+  <div class="container">
+    <nav class="nav nav-underline">
+      <a class="nav-link active" href="/home">Privat</a>
+      <a class="nav-link" href="/foretag/home">Företag</a>
+      <a class="nav-link" href="/fastighet/home">BRF/Fastighetsägare</a>
+      <a class="nav-link" href="http://ko.netatonce.se" target="_blank"
+        >Öppet Nät</a
+      >
+    </nav>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light border navbar-white">
+  <div class="container">
+    <a href="/home" class="navbar-brand finger"
+      ><img
+        class
+        src="assets/img/logo/nao-logo-personal.svg"
+        height="31px"
+        id="logo1"
+        alt="logo1"
+    /></a>
+    <button
+      class="navbar-toggler hidden-sm-up"
+      type="button"
+      (click)="isNavbarCollapsed = !isNavbarCollapsed"
+      data-target="#navbarsDefault"
+      aria-controls="navbarsDefault"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      [ngbCollapse]="isNavbarCollapsed"
+      class="collapse navbar-collapse"
+      id="navbarsDefault"
+    >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown" ngbDropdown>
+          <a class="nav-link dropdown-toggle finger" id="id01" ngbDropdownToggle
+            >Bredband</a
+          >
+          <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+            <a class="dropdown-item finger" href="/bredband"
+              >Bredband via fiber‎</a
+            >
+            <a class="dropdown-item finger" href="/xdsl"
+              >Bredband via telefonjacket</a
+            >
+            <!--<div class="dropdown-divider"></div>
+            <a class="dropdown-item finger" href="/svenljunga">Svenljunga fiber</a>
+              <a class="dropdown-item finger" href="/svedala">Svedala fiber</a>-->
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link finger" href="/telefoni">Telefoni</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link finger" href="/sitemap">Sitemap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link finger" href="/support">Support</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link finger" href="/kontakt">Kontakta oss</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link finger" href="/butik">Webbutik</a>
+        </li>
+      </ul>
+      <nao-cart-modal></nao-cart-modal>
     </div>
   </div>
-  
-  <nav class="navbar navbar-expand-md navbar-light bg-light border navbar-white">
-    <div class="container">
-      <a href="/home" class="navbar-brand finger"><img class src="assets/img/logo/nao-logo-personal.svg" height="31px"
-          id="logo1" alt="logo1" /></a>
-      <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed"
-        data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown" ngbDropdown>
-            <a class="nav-link dropdown-toggle finger" id="id01" ngbDropdownToggle>Bredband</a>
-            <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
-              <a class="dropdown-item finger" href="/bredband">Bredband via fiber‎</a>
-              <a class="dropdown-item finger" href="/xdsl">Bredband via telefonjacket</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item finger" href="/svenljunga">Svenljunga fiber</a>
-              <a class="dropdown-item finger" href="/svedala">Svedala fiber</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link finger" href="/telefoni">Telefoni</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link finger" href="/sitemap">Sitemap</a>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link finger" href="/kontakt">Kontakta oss</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link finger" href="/butik">Webbutik</a>
-          </li>
-        </ul>
-        <nao-cart-modal></nao-cart-modal>
-      </div>
-    </div>
-  </nav>
+</nav>

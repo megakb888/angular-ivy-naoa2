@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { RouterModule } from "@angular/router";
 import { SharedModule } from "../shared/shared.module";
 
 import { BusinessComponent } from "./business.component";
@@ -8,13 +8,15 @@ import { HomeBusinessComponent } from "./home-business/home-business.component";
 import { ContactBusinessComponent } from "./contact/contact.component";
 import { FooterBusinessComponent } from "./core/footer-business/footer-business.component";
 
-import { MatRadioModule } from '@angular/material/radio';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { TelephoneBusinessComponent } from './telephone-business/telephone-business.component';
-import { InternetComponent } from './internet/internet.component';
-import { IotComponent } from './iot/iot.component';
-import { WifiComponent } from './wifi/wifi.component';
-import { ServerComponent } from './server/server.component';
+import { MatRadioModule } from "@angular/material/radio";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { TelephoneBusinessComponent } from "./telephone-business/telephone-business.component";
+import { InternetComponent } from "./internet/internet.component";
+import { IotComponent } from "./iot/iot.component";
+import { WifiComponent } from "./wifi/wifi.component";
+import { ServerComponent } from "./server/server.component";
+import { CloudComponent } from "./cloud/cloud.component";
+import { VpnComponent } from "./vpn/vpn.component";
 
 @NgModule({
   declarations: [
@@ -27,15 +29,11 @@ import { ServerComponent } from './server/server.component';
     InternetComponent,
     IotComponent,
     WifiComponent,
-    ServerComponent
+    ServerComponent,
+    CloudComponent,
+    VpnComponent
   ],
-  imports: [
-    RouterModule,
-    SharedModule,
-    MatRadioModule,
-    MatSidenavModule,
-
-  ],
+  imports: [RouterModule, SharedModule, MatRadioModule, MatSidenavModule],
   exports: [
     BusinessComponent,
     NavBusinessComponent,
@@ -45,4 +43,4 @@ import { ServerComponent } from './server/server.component';
     TelephoneBusinessComponent
   ]
 })
-export class BusinessModule { }
+export class BusinessModule {}
